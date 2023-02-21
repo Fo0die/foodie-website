@@ -21,18 +21,12 @@
   font-family: 'Josefin Sans', sans-serif;
   margin-top: -30px;
   font-size: 20px;
-  transform: translateX(100%);
-  animation: food-com 15s linear infinite;
+  padding-left: 850px;
+  padding-top: 30px;
+  
  }
- 
- @keyframes food-com {
-   0% {
-     transform: translateX(100%);
-   }
-   100% {
-     transform: translateX(70%);
-   }
-  }
+
+  
 
 ul li a{
   color: #FEFFFE;
@@ -40,11 +34,27 @@ ul li a{
   display: block;
   padding: 5px 30px;
   font-weight: bold;
-  
+  cursor: pointer;  
+}
+
+
+
+ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+ul li a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
 }
 a:link{
   text-decoration: none;
 }
+
+
+
 li#connect-bar a{
   margin-bottom: 20px;
   margin-left: 160px;
@@ -55,6 +65,8 @@ li#connect-bar a{
   border-radius: 70%;
   text-align: center;  
 }
+
+
  li#finder-bar a{
   margin-left: 390px;
   margin-top: -148px;
@@ -64,6 +76,10 @@ li#connect-bar a{
   border-radius: 50%;
   text-align: center;
  }
+
+
+
+
 
  li#review-bar a{
   margin-left: 160px;
@@ -79,11 +95,11 @@ li#connect-bar a{
 
   margin-left: 390px;
   margin-top: -125px;
-  line-height: 50px;
+
   width: 80px;
   height: 120px;
   border-radius: 60%;
-  line-height: 30px;
+  line-height: 40px;
   text-align: center;
  }
  li#sign-bar a{
@@ -91,10 +107,9 @@ li#connect-bar a{
   height: 140px;
   margin-left: 550px;
   margin-top: -255px;
-  line-height: 50px;
   border-radius: 50%;
   text-align: center;
-  line-height: 145px;
+  line-height: 125px;
  }
 
  .avocado{
@@ -113,3 +128,20 @@ li#connect-bar a{
    }
    
  }
+.footer ul li a{
+  color: #FEFFFE;
+  background-color: transparent;
+  text-align: right;
+}
+.footer ul li a:hover{
+  padding: 20px;
+ box-shadow: none;
+ color: aquamarine;
+}
+
+span{
+  color: aliceblue;
+  width: auto;
+animation: slide1 1s ease-in-out infinite;
+  margin-left: 9px;
+}
